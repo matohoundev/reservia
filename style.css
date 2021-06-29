@@ -3,6 +3,11 @@
   src: url(./assets/font/raleway/Raleway-VariableFont_wght.ttf) format('truetype');
 }
 
+@font-face {
+  font-family: "raleway-ex-b";
+  src: url(./assets/font/raleway/static/Raleway-ExtraBold.ttf) format('truetype');
+}
+
 /* reset */
 *, ::before, ::after {
     margin: 0;
@@ -19,12 +24,14 @@
 
   a{
     text-decoration: none;
+    color: #0065FC;
+    font-weight: 600;
   }
 
-
+/* header */
 
 header{
-  height: 100px;
+  height: 120px;
   border: 2px solid red;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -33,18 +40,26 @@ header{
 
   header img {
     border: 1px solid blue;
-    height: 60px;
+    height: 50px;
     grid-area: 1 / 1 / 2 / 2;
+    margin: 2% 0 2% 0;
   }
 
   header > a {
     border: 1px solid blue;
-    grid-area: 1 / 2 / 2 / 3;
     display: grid;
+    grid-area: 1 / 2 / 2 / 3;
     align-content: center;
-    left: 0;
+    font-family: "raleway-ex-b";
+    font-weight: light;
+    margin: 2% 0 2% 0;
   }
 
   header nav {
+    border: 1px solid green;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     grid-area: 2 / 1 / 3 / 3;
   }
