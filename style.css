@@ -8,6 +8,11 @@
   src: url(./assets/font/raleway/static/Raleway-ExtraBold.ttf) format('truetype');
 }
 
+@font-face {
+  font-family: "raleway-md";
+  src: url(./assets/font/raleway/static/Raleway-Medium.ttf) format('truetype');
+}
+
 /* reset */
 *, ::before, ::after {
     margin: 0;
@@ -17,49 +22,80 @@
   
   body {
     margin: 0;
-    font-family: 'raleway' ,Georgia, 'Times New Roman', Times, serif;
+    font-family: 'raleway' , Georgia, 'Times New Roman', Times, serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
-
+/* lien */
   a{
     text-decoration: none;
     color: #0065FC;
     font-weight: 600;
   }
 
+/* font-size */
+
+h2 {
+  font-family: "raleway-ex-b", Georgia, 'Times New Roman', Times, serif;
+  font-size: 1.4em;
+}
+
+p {
+  font-family: 'raleway-md' , Georgia, 'Times New Roman', Times, serif;
+  font-size: 1em;
+}
+
 /* header */
 
 header{
-  height: 120px;
-  border: 2px solid red;
+  height: 15vh;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
 }
 
   header img {
-    border: 1px solid blue;
     height: 50px;
+    position:relative;
+    left: 10%;
     grid-area: 1 / 1 / 2 / 2;
-    margin: 2% 0 2% 0;
+    
   }
 
   header > a {
-    border: 1px solid blue;
+    width: min-content;
+    position: relative;
+    left: 50%;
+    top: 5%;
     display: grid;
     grid-area: 1 / 2 / 2 / 3;
     align-content: center;
-    font-family: "raleway-ex-b";
+    font-family: "raleway-ex-b", Georgia, 'Times New Roman', Times, serif;
     font-weight: light;
-    margin: 2% 0 2% 0;
   }
 
+    header img , header > a {
+      margin: 2vh 0 2vh 0;
+    }
+
   header nav {
-    border: 1px solid green;
     height: 50px;
     display: flex;
     justify-content: space-around;
     align-items: center;
     grid-area: 2 / 1 / 3 / 3;
   }
+
+/* navigation */
+
+.nav-search-filter {
+  margin: 3vh 4.5vw 3vh 4.5vw;
+}
+  .nav-search-filter h2 {
+    width: 90%;
+  }
+
+  .nav-search-filter * {
+    margin-bottom: 1.2vh;
+  }
+
