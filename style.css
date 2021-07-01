@@ -26,14 +26,22 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
+
+/*reset-theme*/
+
+  textarea:focus, input:focus {
+    outline: none;
+    color: #0065FC;
+  }
+
 /* lien */
-  a{
+  a {
     text-decoration: none;
     color: #0065FC;
     font-weight: 600;
   }
 
-/* font-size */
+/* Font-properties */
 
 h2 {
   font-family: "raleway-ex-b", Georgia, 'Times New Roman', Times, serif;
@@ -45,7 +53,18 @@ p {
   font-size: 1em;
 }
 
-/* header */
+.in-location, strong {
+  font-family: "raleway-ex-b", Georgia, 'Times New Roman', Times, serif;
+  font-size: 1em;
+}
+
+.btn-card-filter:not(i) {
+  font-family: "raleway-md", Georgia, 'Times New Roman', Times, serif;
+  font-weight: bold;
+  font-size: 0.9em;
+}
+
+/* Header */
 
 header{
   height: 15vh;
@@ -86,16 +105,104 @@ header{
     grid-area: 2 / 1 / 3 / 3;
   }
 
-/* navigation */
+/* Navigation */
 
 .nav-search-filter {
   margin: 3vh 4.5vw 3vh 4.5vw;
 }
+  .nav-search-filter *:not(.fas, .nav-search-filter p, .div-filter p) {
+    margin-bottom: 1.2vh;
+  }
   .nav-search-filter h2 {
     width: 90%;
   }
+  .nav-search-filter p {
+    margin-bottom: 3vh;
+  }
 
-  .nav-search-filter * {
-    margin-bottom: 1.2vh;
+/* Navigation - searchBar*/
+
+.div-icon-location {
+  padding: 14px 15px 14px 20px;
+  border-radius: 30% 0% 0 30%;
+  background-color: #F2F2F2;
+}
+
+  .icon-location {
+    /* padding: 30% 0 0 32%; */
+  } 
+
+.in-location {
+  height: 47px;
+  width: 235px;
+  padding-left: 15px;
+  border: 1px solid #F2F2F2;
+}
+
+.btn-search-icon {
+  height: 49px; width: 49px;
+  margin-left: -20px;
+  border: 0px;
+  border-radius: 1em;
+  background-color: #0065FC;
+}
+
+.icon-search {
+  border: none;
+  background-color: #0065FC;
+  color: white;
+}
+
+.btn-search-text {
+  display: none;
+}
+
+/* Navigation - filter*/
+
+.div-filter p{
+  margin-bottom: 3vh;
+}
+
+.box-card-filter {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.btn-card-filter {
+  width: 150px; height: 45px;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  border: 2px solid #c0bebe;
+  border-radius: 2em;
+  background-color: white;
+}
+
+  .btn-card-filter .icon-filter{
+    height: 45px; width: 45px;
+    margin-left: -2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #0065FC;
+    border-radius: 2em;
+    background-color: #DEEBFF;
+  }
+
+  .btn-card-filter:first-child {
+    grid-area: 1 / 1 / 2 / 2;
+  }
+
+  .btn-card-filter:nth-child(2) {
+    grid-area: 1 / 2 / 2 / 3;
+  }
+
+  .btn-card-filter:nth-child(3) {
+    grid-area: 2 / 1 / 3 / 2;
+  }
+
+  .btn-card-filter:last-child {
+    grid-area: 3 / 1 / 4 / 2;
   }
 
