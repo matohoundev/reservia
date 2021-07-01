@@ -59,8 +59,7 @@ p {
 }
 
 .btn-card-filter:not(i) {
-  font-family: "raleway-md", Georgia, 'Times New Roman', Times, serif;
-  font-weight: bold;
+  font-family: "raleway-ex-b", Georgia, 'Times New Roman', Times, serif;
   font-size: 0.9em;
 }
 
@@ -170,7 +169,10 @@ header{
 }
 
 .btn-card-filter {
-  width: 150px; height: 45px;
+  width: 95%;
+  min-width: min-content; 
+  max-width: 200px;
+  height: 45px;
   display: flex;
   align-content: center;
   align-items: center;
@@ -182,6 +184,7 @@ header{
   .btn-card-filter .icon-filter{
     height: 45px; width: 45px;
     margin-left: -2px;
+    margin-right: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -203,6 +206,6 @@ header{
   }
 
   .btn-card-filter:last-child {
-    grid-area: 3 / 1 / 4 / 2;
+    grid-area: 3 / 1 / 4 / 3;
   }
 
