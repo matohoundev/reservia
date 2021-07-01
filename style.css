@@ -255,3 +255,10 @@ header{
 .header-popularity .icon-chart {
   font-size: 24px;
 }
+
+/* Popularity - Card */
+
+.card-popularity {
+  margin: 2vh 0 2vh 0;
+  background-color: white;
+}
