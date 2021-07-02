@@ -89,6 +89,11 @@ a {
   font-size: 0.9em;
 }
 
+.btn-show-accommodation {
+  font-family: "raleway-ex-b", Georgia, 'Times New Roman', Times, serif;
+  font-size: 1.1em;
+}
+
 /* icon */
 
 .icon-popularity, .icon-popularity-sp {
@@ -348,6 +353,7 @@ header{
 }
 
 .card-accommodation {
+  max-width: 335px;
   height: 196px;
   padding: 4px;
   margin-bottom: 2vh;
@@ -357,7 +363,7 @@ header{
 }
 
   .card-accommodation img {
-    width: 331px; height: 115px;
+    width: 100%; height: 115px;
     justify-self: center;
     border-radius: 1em 1em 0 0;
     object-fit: cover;
@@ -370,4 +376,34 @@ header{
   .card-accommodation h4, .card-accommodation p, .card-accommodation div {
     padding-left: 10px;
     padding-bottom: 3px;
+  }
+
+.btn-show-accommodation {
+  margin-top: 1vh;
+  border: none;
+  background-color: white;
+}
+
+/* Paranormal activity */
+
+.activities {
+  padding: 0 4.5 0 4.5vw;
+}
+
+  .card-activities {
+      max-width: 335px;
+    height: 196px;
+    padding: 4px;
+    margin-bottom: 2vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0 0 3px #c0bebe;
+    border-radius: 1em;
+  }
+
+  .card-activities img {
+    width: 100%; height: 115px;
+    border-radius: 1em 1em 0 0;
+    object-fit: cover;
   }
