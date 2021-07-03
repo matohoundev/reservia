@@ -39,10 +39,14 @@
   }
 
 /* basic container padding */
-section > div, footer {
+
+section > div {
   padding: 4.5vh 4.5vw 3vh 4.5vw;
 }
 
+footer {
+  padding: 4.5vh 7vw 3vh 7vw;
+}
 
 /* lien */
 
@@ -70,6 +74,12 @@ h3 {
 h4 {
   font-family: "raleway-ex-b", Georgia, 'Times New Roman', Times, serif;
   font-size: 0.97em;
+}
+
+h5 {
+  font-family: "raleway-md", Georgia, 'Times New Roman', Times, serif;
+  font-size: 1.2em;
+  font-weight: bold;
 }
 
 p {
@@ -315,7 +325,7 @@ header{
 
 .card-popularity {
   max-width: 335px;
-  margin: 2% 0 2vh 0;
+  margin: 2% 0 2% 0;
   border-radius: 1em;
   background-color: white;
   box-shadow: 0 0 10px #c0bebe;
@@ -348,8 +358,8 @@ header{
 
 .card-popularity div {
   grid-area: 3 / 2 / 4 / 3;
-  font-size: 11px;
   align-self: center;
+  font-size: 11px;
 }
 
 /* Accomodation */
@@ -396,7 +406,7 @@ header{
 
 /* Paranormal activity */
 
-.activities {
+.activities h2 {
   padding: 0 4.5vw 0 4.5vw;
 }
 
@@ -425,3 +435,19 @@ header{
     }
 
 /* Footer */
+
+footer {
+  background-color: #F2F2F2;
+}
+
+footer div:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+footer h5 {
+  margin-bottom: 17px;
+}
+
+footer p {
+  margin-bottom: 10px;
+}
