@@ -503,6 +503,16 @@ footer p {
 @media all and (min-device-width : 1024px) {
   /* Tablettes landscape - desktop */
 
+  /* basic container padding */
+
+  section > div {
+    padding: 4.5vh 3vw 0.1vh 3vw;
+  }
+  /*
+    footer {
+      padding: 4.5vh 7vw 3vh 7vw;
+    } */
+
   /* Header */
 
   header {
@@ -593,21 +603,6 @@ footer p {
       .btn-card-filter:last-child {
         min-width: 200px;
       }
-    
-  }
-
-  @media all and (min-device-width : 1024px) {
-    /* Tablettes landscape - desktop NOUUUUUUVEAU */
-
-    /* basic container padding */
-
-    section > div {
-      padding: 4.5vh 3vw 0.1vh 3vw;
-    }
-/*
-    footer {
-      padding: 4.5vh 7vw 3vh 7vw;
-    } */
 
     .popularity-accommodation {
       padding: 0 5vw;
@@ -625,34 +620,34 @@ footer p {
       padding-bottom: 0vh;
     }
 
-  /* Popularity - Card */
+    /* Popularity - Card */
 
-  .card-popularity {
-    margin: 9% 0 9% 0;
-  }
+    .card-popularity {
+      margin: 9% 0 9% 0;
+    }
 
-  /* Accommodation */
+    /* Accommodation */
 
-  .accommodation {
-    background-color: #F2F2F2;
-    border-radius: 1em;
-    width: 67%;
-  }
+    .accommodation {
+      background-color: #F2F2F2;
+      border-radius: 1em;
+      width: 67%;
+    }
 
-  .accommodation ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-  .card-accommodation a {
-    max-width: 245px;
-    margin-bottom: 2.5vh;
-    /* margin-right: 1vw; */
-  }
+    .accommodation ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    .card-accommodation a {
+      max-width: 245px;
+      margin-bottom: 2.5vh;
+      /* margin-right: 1vw; */
+    }
 
-  .btn-show-accommodation {
-    margin-top: 0vh;
-  }
+    .btn-show-accommodation {
+      margin-top: 0vh;
+    }
 
   }
 
