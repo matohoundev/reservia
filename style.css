@@ -60,7 +60,13 @@ section > div {
 }
 
 footer {
+  position: relative;
+  right: 0;
+}
+
+.box-footer {
   padding: 4.5vh 7vw 3vh 7vw;
+  max-width: 1440px;
 }
 
 /* lien */
@@ -437,30 +443,36 @@ header{
     max-width: 335px;
     height: 170px;
     margin-bottom: 2vh;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(2, 1fr);
+    display: flex;
+    flex-direction: column;
     box-shadow: 0 0 3px #c0bebe;
     border-radius: 1em;
   }
 
     .card-activities img {
-      width: 100%; height: 115px;
-      grid-area: 1 / 1 / 2 / 2;
+      height: 70%;
+      width: 100%;
       border-radius: 1em 1em 0 0;
       object-fit: cover;
     }
 
     .card-activities h3 {
+      height: 30%;
+      min-height: 55px;
       padding-left: 15px;
-      grid-area: 2 / 1 / 3 / 2;
-      align-self: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
     }
 
 /* Footer */
 
 footer {
   background-color: #F2F2F2;
+}
+
+.box-footer {
+  width: 100%;
 }
 
 footer div:not(:last-child) {
@@ -474,6 +486,9 @@ footer h5 {
 footer p {
   margin-bottom: 10px;
 }
+
+
+
 
 @media all and (min-width: 375px) {
   /* Upgrade to a size for very small devices to a standard size */
@@ -517,8 +532,12 @@ footer p {
     padding: 4.5vh 3vw 0.1vh 3vw;
   }
   
-    footer {
-      padding: 4.5vh 7vw 3vh 14vw;
+  footer {
+    padding: 0;
+  }
+
+    .box-footer{
+      padding: 4.5vh 7vw 3vh 1vw;
     }
 
   /* Header */
@@ -531,8 +550,6 @@ footer p {
   }
 
     header > a {
-      /* left: 50%; */
-      /* left: 91%; */
       left: 65%;
       top: 0px;
       grid-area: 1 / 3 / 2 / 4;
@@ -677,35 +694,33 @@ footer p {
       .activities h2 {
         padding: 4.5vh 4.5vw 0 0;
       }
-
+      
     .box-card-activities {
       display: flex;
       padding: 2.5vh 0 0 0;
       justify-content: space-between;
-      /* height: max-content; */
       border: 1px solid red;
     }
 
     .list-card-activities {
+      height: min-content;
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       grid-template-rows: repeat(2, 1fr);
-      /* grid-column-gap: 6%;
-      grid-row-gap: 6%; */
+      grid-column-gap: 6%;
+      /* grid-row-gap: 9%; */
       border: 1px solid green;
     }
 
     .card-activities {
-      width: 300px;
+      width: 100%;
       max-height: 445px;
     }
 
-      .card-activities:first-child a {
-        /* max-width: 335px; */
-        height: max-content;
-        max-height: 445px;
-        margin-bottom: 2vh;
-      }
+    .card-activities a {
+      height: max-content;
+      margin-bottom: 0;
+    }
 
     .card-activities:first-child {
       grid-area: 1 / 1 / 3 / 2;
@@ -722,46 +737,42 @@ footer p {
     .list-card-activities .card-activities:first-child img {
       height: 387px;
     }
-/****je suis laaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa**/
-    .box-card-activities img {
-      height: 183px;
-      border: black 2px solid;
+
+    .card-act-2 img {
+      max-height: 180px;
     }
 
-    .list-card-activities .card-activities:nth-child(3) img {
-      /* height: 110px;
-      border: black 1px solid; */
+    .card-act-3 img {
+      max-height: 110px;
     }
 
-    .list-card-activities .card-activities:nth-child(5) img {
-      /* height: 140px;
-      border: black 1px solid; */
+    .card-act-5 img {
+      max-height: 140px;
     }
 
-    .list-card-activities .card-activities:last-child img {
-      /* height: 155px;
-      border: black 1px solid; */
-    }
-
-    .card-activities img {
-      /* width: 100%;  */
-      height: 115px;
-      /* grid-area: 1 / 1 / 2 / 2;
-      border-radius: 1em 1em 0 0; */
-      /* object-fit: cover; */
+    .card-act-6 img {
+      max-height: 155px;
     }
 
     /* Footer */
 
       footer {
-        width: 100vw;
+        width: 100%;
         position: absolute;
         display: flex;
-        right: 0;
+        justify-content: center;
         background-color: #F2F2F2;
       }
 
+      .box-footer {
+        display: flex;
+      }
+
       footer div:not(:last-child) {
+        margin-bottom: 0px;
+      }
+
+      .box-footer div:not(:last-child) {
         margin-right: 19%;
         margin-bottom: 0px;
       }
