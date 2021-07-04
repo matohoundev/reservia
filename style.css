@@ -619,6 +619,8 @@ footer p {
         min-width: 200px;
       }
 
+    /* Popularity */
+
     .popularity-accommodation {
       padding: 0 5vw;
       display: flex;
@@ -756,7 +758,6 @@ footer p {
         position: absolute;
         display: flex;
         right: 0;
-        /* justify-content: space-between; */
         background-color: #F2F2F2;
       }
 
