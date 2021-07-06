@@ -204,6 +204,10 @@ header{
       border-bottom: 3px solid #0065FC;
     }
 
+    header nav a:last-child {
+      border-bottom: 3px solid #F2F2F2;
+    }
+
 /* Navigation */
 
 .nav-search-filter {
@@ -417,7 +421,7 @@ header{
   padding: 4px;
   margin-bottom: 2vh;
   display: grid;
-  box-shadow: 0 0 3px #c0bebe;
+  box-shadow: 0 0 8px #c0bebe;
   border-radius: 1em;
 }
 
@@ -455,7 +459,7 @@ header{
     margin-bottom: 2vh;
     display: flex;
     flex-direction: column;
-    box-shadow: 0 0 3px #c0bebe;
+    box-shadow: 0 2px 3px 1px #c0bebe65;
     border-radius: 1em;
   }
 
@@ -585,6 +589,10 @@ footer a {
         border-top: 3px solid #0065FC;
         border-bottom: none;
       }
+
+      header nav a:last-child {
+        border-bottom: none;
+      }  
 
     /* Navigation - searchBar */
 
