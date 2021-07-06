@@ -485,6 +485,11 @@ footer {
   width: 100%;
 }
 
+.box-footer div {
+  display: flex;
+  flex-direction: column;
+}
+
 footer div:not(:last-child) {
   margin-bottom: 30px;
 }
@@ -493,12 +498,9 @@ footer h5 {
   margin-bottom: 17px;
 }
 
-footer p {
+footer a {
   margin-bottom: 10px;
 }
-
-
-
 
 @media all and (min-width: 375px) {
   /* Upgrade to a size for very small devices to a standard size */
@@ -704,10 +706,13 @@ footer p {
       }
       
     .box-card-activities {
-      display: flex;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: 1fr;
+      grid-column-gap: 3%;
       padding: 2.5vh 0 0 0;
-      justify-content: space-between;
-      border: 1px solid red;
+      /* justify-content: space-between; */
+      /* border: 1px solid red; */
     }
 
     .list-card-activities {
@@ -717,8 +722,16 @@ footer p {
       grid-template-rows: repeat(2, 1fr);
       grid-column-gap: 6%;
       /* grid-row-gap: 9%; */
-      border: 1px solid green;
+      /* border: 1px solid green; */
     }
+
+      .list-card-activities:first-child {
+        grid-row-gap: 9%;
+      }
+
+      .list-card-activities:last-child {
+        grid-row-gap: 2.5%;
+      }
 
     .card-activities {
       width: 100%;
@@ -785,7 +798,7 @@ footer p {
         margin-bottom: 0px;
       }
 
-      footer p {
+      footer a {
         margin-bottom: 9px;
       }
 

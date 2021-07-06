@@ -4,25 +4,34 @@ header nav a:last-child:hover {
 }
 
 .btn-card-filter:hover {
-    animation: filterHover 0.8s 1 ease-in-out;
+    background: linear-gradient(to right, #DEEBFF 15%, transparent 0);
+    animation: filterHover 2s 1 ease-in-out;
+}
+
+.btn-card-filter:focus {
+    transition-duration: 0.5s;
+    background-color: #DEEBFF;
 }
 
 .card-popularity a:hover, .card-accommodation a:hover, .card-activities a:hover {
-    transition-duration: 0.1s;
+    transition-duration: 0.2s;
     color: #0065FC;
 }
-/* [data-aos="mission-slide"] {
-    background-size: 400%;
-    &.aos-animate {
-    background-size: 100%;
-    }
-} */
 
 @keyframes filterHover {
     0% {
-        transform: translateX(5%);
+        background-size: 100%;
     }
+
+    45% {
+        background-size: 700%;
+    }
+
+    45% {
+        background-size: 700%;
+    }
+
     100% {
-        transform: translateX(-5%);
+        background-size: 100%;
     }
 }
